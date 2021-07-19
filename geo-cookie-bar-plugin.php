@@ -16,12 +16,12 @@ add_action( 'wp_enqueue_scripts', 'gcb_public_scripts' );
 
 function gcb_public_scripts() {
 
-//	// register scripts with WordPress's internal library
+	// register scripts with WordPress's internal library
 	wp_register_script('display-cookie-law-info-bar-eu-js', plugins_url('/js/display-cookie-law-info-bar-eu.js',__FILE__), array('jquery'),'',true);
-//	wp_register_style('display-cookie-law-info-bar-eu-css', plugins_url('/css/display-cookie-law-info-bar-eu.css',__FILE__));
-//	
-//	// add to que of scripts that get loaded into every page
-    wp_enqueue_script('display-cookie-law-info-bar-eu-js');
-//	wp_enqueue_style('display-cookie-law-info-bar-eu-css');
+	//wp_register_style('display-cookie-law-info-bar-eu-css', plugins_url('/css/display-cookie-law-info-bar-eu.css',__FILE__));
+
+	// add to que of scripts that get loaded into every page
+	wp_enqueue_script('display-cookie-law-info-bar-eu-js');
+	//wp_enqueue_style('display-cookie-law-info-bar-eu-css');
 
 }
